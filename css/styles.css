@@ -11,14 +11,15 @@ body{
     align-items: center;
     height: 100vh;
     font-family: 'outfit', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 300;
     
 }
 
 .card{
-    max-width: 350px;
-    padding: 24px;
-    border-radius: 12px;
+    max-width: 21.875rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
     background-color: hsl(216, 50%, 16%);
     margin: 0 1rem;
     
@@ -28,14 +29,14 @@ body{
 .container {
     position: relative;
     width: 100%;
-    height: auto;
-    /* max-width: 400px; */
-  }
+    
+    }
 
 .image{
+    display: block;
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .overlay {
@@ -44,22 +45,22 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 98%;
+    height: 100%;
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-    background-color: hsl(178, 100%, 50%);
-    
+    background-color:hsl(187, 100%, 34%);
+    border-radius: 0.5rem;
   }
 
   .container:hover .overlay {
-    opacity: 0.5;
-    border-radius: 8px;
+    opacity: 0.7;
+    
   }
 
   .icon {
     color: white;
-    font-size: 100px;
+    font-size: 6.25rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,26 +70,42 @@ body{
     width: 100%;
   }
 
+  .icon-view:hover {
+    color: hsl(178, 100%, 50%, 0.5);
+  }
+
+
 h1{
     font-size: 1.3rem;
     color: hsl(0, 0%, 100%);
-    margin: 24px auto;
-    font-weight: 400;
+    margin: 1.5rem auto;
+    font-weight: 600;
 }
 
-h1:hover{
+a h1:hover{
     color: hsl(178, 100%, 50%);
-    cursor: pointer;
 }
 
 .description{
     color: hsl(215, 51%, 70%);
-    margin-bottom: 20px;
+    margin-bottom: 1.3rem;
 }
 
 .detail{
     display: flex;
     justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 400;
+    align-items: center;
+}
+
+.eth-price{
+    display: flex;
+    align-items: center;
+}
+
+.eth-price img{
+    margin-right: 0.375rem;
 }
 
 .price{
@@ -97,29 +114,36 @@ h1:hover{
 
 .time-left{
     color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+}
+
+.clock{
+    margin-right: 0.375rem;
 }
 
 hr{
     border-color: hsl(215, 32%, 27%);
-    border: none none none 1px;
-    /* height: 10px; */
+    border-style: none none solid;
     margin: 1.2rem auto;
 }
 
 .creator{
     display: flex;
     align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-size: 1rem;
 }
 
 .creator-image{
     width: 10%;
-    border: 1px solid white;
+    border: 0.0625rem solid white;
     border-radius: 100%;
     margin-right: 1rem;
 }
 
 a{
-    color: hsl(215, 51%, 70%);
+    color: hsl(0, 0%, 100%);
     text-decoration: none;
 }
 
