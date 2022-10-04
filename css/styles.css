@@ -9,12 +9,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'outfit', sans-serif;
     font-size: 1.125rem;
     font-weight: 300;
     
 }
+
 
 .card{
     max-width: 21.875rem;
@@ -51,6 +52,9 @@ body{
     transition: .3s ease;
     background-color:hsl(187, 100%, 34%);
     border-radius: 0.5rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
   }
 
   .container:hover .overlay {
